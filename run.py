@@ -62,10 +62,10 @@ def set_user_up(user_name):
             continue
         else:
             break
-    
+
     for x in range(user_grid_size):
         user_board.append(['  .  '] * user_grid_size)
-    
+
     for x in range(user_grid_size):
         computer_board.append(['  .  '] * user_grid_size)
 
@@ -115,7 +115,7 @@ def take_input_and_play_game():
             continue
         else:
             break
-    
+
     while True:
         """
         Validation! user can guess colum from index nummer o and it's depend
@@ -131,7 +131,7 @@ def take_input_and_play_game():
             continue
         else:
             break
-    
+
     computer_guess_row = random_num(computer_board)
     computer_guess_col = random_num(computer_board)
     show_result()
@@ -158,7 +158,7 @@ def show_result():
         print("Computer guess to user board...")
         sleep(2)
         print("Computer missed this time.")
-    
+
     if user_guess_row == computer_ship_row[0] and\
             user_guess_col == computer_ship_col[0]:
         computer_board[user_guess_row][user_guess_col] = hit_success_sign
