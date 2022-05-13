@@ -131,3 +131,7 @@ def take_input_and_play_game():
             continue
         else:
             break
+    
+    computer_guess_row = random_num(computer_board)
+    computer_guess_col = random_num(computer_board)
+    show_result()
