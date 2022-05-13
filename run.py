@@ -62,4 +62,8 @@ def set_user_up(user_name):
             continue
         else:
             break
-        
+    
+    for x in range(user_grid_size):
+        user_board.append(['  .  '] * user_grid_size)
+    
+    
