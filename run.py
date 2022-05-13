@@ -137,6 +137,14 @@ def take_input_and_play_game():
     show_result()
 
 
+def is_computer_guess_success():
+    for num in range(total_ship_number):
+        if computer_guess_row == user_ship_row[num] and\
+                computer_guess_col == user_ship_col[num]:
+            return True
+    return False
+
+
 def show_result():
     """
     In the result board if player guess Correct then print Congratulations
@@ -159,8 +167,7 @@ def show_result():
         sleep(2)
         print("Computer missed this time.")
 
-    if user_guess_row == computer_ship_row[0] and\
-            user_guess_col == computer_ship_col[0]:
+    if is_computer_guess_success():
         computer_board[user_guess_row][user_guess_col] = hit_success_sign
         print_board(computer_board, computer_name)
         print("\n")
