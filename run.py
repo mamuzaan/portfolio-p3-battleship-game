@@ -215,3 +215,8 @@ if __name__ == '__main__':
     print_board(user_board, user_name)
     print_board(computer_board, computer_name)
     played_rounds = 0
+    while played_rounds < game_rounds:
+        take_input_and_play_game()
+        played_rounds = played_rounds + 1
+        if played_rounds == game_rounds:
+            print(f'Game over, do you want to play again?')
