@@ -45,3 +45,21 @@ def set_user_up(user_name):
             break
         else:
             print("Invalid! Please enter valid user name")
+
+    while True:
+        """
+        Grid size validation inside the try, user can choose minimum grid
+        size 5 and maximum grid size 10 and except NameError and ValueError
+        """
+        try:
+            user_grid_size = int(input("Please enter grid size num (5-10): "))
+            if user_grid_size < min_grid_size or\
+               user_grid_size > max_grid_size:
+                print("Please enter valid grid size number between (5-10): ")
+                continue
+        except (NameError, SyntaxError, ValueError):
+            print("Please enter valid grid size number:")
+            continue
+        else:
+            break
+        
