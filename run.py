@@ -22,3 +22,7 @@ user_guess_row = -1
 user_guess_col = -1
 computer_guess_row = -1
 computer_guess_col = -1
+user_ship_row = []
+user_ship_col = []
+computer_ship_row = []
+computer_ship_col = []
