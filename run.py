@@ -210,3 +210,5 @@ if __name__ == '__main__':
 
     for x in range(user_grid_size):
         computer_board.append(['  .  '] * user_grid_size)
+    prepare_user_ship()
+    prepare_computer_ship()
