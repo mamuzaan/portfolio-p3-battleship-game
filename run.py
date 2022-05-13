@@ -32,3 +32,16 @@ ship_sign = "  @  "
 hit_success_sign = "  X  "
 hit_miss_sign = "  0  "
 game_rounds = 3
+
+
+def set_user_up(user_name):
+    while True:
+        user_name = input("Please enter your name:\n ")
+        user_name = user_name.strip()
+        """
+        User name validation! User name must be letters or numbers.
+        """
+        if len(user_name) > 0:
+            break
+        else:
+            print("Invalid! Please enter valid user name")
