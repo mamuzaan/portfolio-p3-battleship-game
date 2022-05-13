@@ -158,3 +158,12 @@ def show_result():
         print("Computer guess to user board...")
         sleep(2)
         print("Computer missed this time.")
+    
+    if user_guess_row == computer_ship_row[0] and\
+            user_guess_col == computer_ship_col[0]:
+        computer_board[user_guess_row][user_guess_col] = hit_success_sign
+        print_board(computer_board, computer_name)
+        print("\n")
+        print(user_name + " guess to computer board...")
+        sleep(2)
+        print("Congratulations! " + user_name + " guess this time")
