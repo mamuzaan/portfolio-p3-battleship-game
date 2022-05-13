@@ -99,3 +99,19 @@ def prepare_computer_ship():
 def take_input_and_play_game():
     global user_guess_row, user_guess_col, computer_guess_row
     global computer_guess_col
+
+    while True:
+        """
+        Validation! user can guess row from index nummer o and it's depend
+        on users grid size otherwise print wrong message below.
+        """
+        try:
+            user_guess_row = int(input("Guess a row:\n "))
+            if user_guess_row < 0 or user_guess_row >= user_grid_size:
+                print("Oops, that's not even in the ocean. Guess again:\n")
+                continue
+        except ValueError:
+            print("Please enter correct row value:\n")
+            continue
+        else:
+            break
