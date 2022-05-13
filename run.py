@@ -221,3 +221,11 @@ if __name__ == '__main__':
         if played_rounds == game_rounds:
             print(f'Game over, do you want to play again?')
             answer = input('yes/no ')
+            if answer == 'yes':
+                prepare_user_ship()
+                prepare_computer_ship()
+                print_board(user_board, user_name)
+                print_board(computer_board, computer_name)
+                played_rounds = 0
+            else:
+                print('Thanks for playing... Goodbye')
