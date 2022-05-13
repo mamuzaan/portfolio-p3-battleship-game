@@ -94,3 +94,8 @@ def prepare_computer_ship():
     for x in range(total_ship_number):
         computer_ship_row.append(random_num(computer_board))
         computer_ship_col.append(random_num(computer_board))
+
+
+def take_input_and_play_game():
+    global user_guess_row, user_guess_col, computer_guess_row
+    global computer_guess_col
