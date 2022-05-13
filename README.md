@@ -15,3 +15,16 @@ The player can see where their ships are, shows by an @ sign, but user cannot se
 Guesses are marked on the board with an X. Hits are indicated by 0.
 User and the computer then take it in turns to make guesses and try to sink each other's battleships.
 The winner is who sinks of there battleships first.
+
+## Features
+
+#### Existing Features
+    - Random board generation
+        - Ships are rendomly placed on both the user and computer boards
+        - The user cannot see where the computer's ships are
+![screenship1.png](images/screenshot1.png)
+
+* User can play against the computer
+* Accept user input row and column
+
+![screenshot2.png](images/screenshot2.png)
