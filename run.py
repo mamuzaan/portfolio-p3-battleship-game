@@ -220,3 +220,4 @@ if __name__ == '__main__':
         played_rounds = played_rounds + 1
         if played_rounds == game_rounds:
             print(f'Game over, do you want to play again?')
+            answer = input('yes/no ')
