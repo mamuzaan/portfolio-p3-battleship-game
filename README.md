@@ -28,3 +28,21 @@ The winner is who sinks of there battleships first.
 * Accept user input row and column
 
 ![screenshot2.png](images/screenshot2.png)
+
+* Input validation and error checking
+    - User cannot enter coordinate outside the size of the grid
+    - User must enter numbers
+![screenshot3.png](images/screenshot3.png)
+
+#### Future Features
+- Allow user to select the board size and number of ships 
+- Allow user to position ships themeselves
+
+
+## Testing
+
+I have manually tested this project by doing the following
+- Passed the code through a PEP linter and confirmed that there are no problems
+- Given incorrect input: strings when numbers are expected, out of bounds inputs
+- Tested in my local terminal and the code Institute Heroku Terminal
+
