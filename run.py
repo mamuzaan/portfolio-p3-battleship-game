@@ -143,3 +143,11 @@ def show_result():
     eser_name win, otherwise missed this time. Computer board print also
     like same to user board.
     """
+    if computer_guess_row == user_ship_row[0] and\
+            computer_guess_col == user_ship_col[0]:
+        user_board[computer_guess_row][computer_guess_col] = hit_success_sign
+        print_board(user_board, user_name)
+        print("\n")
+        print("Computer guess to user board...")
+        sleep(2)
+        print("Congratulations! computer guess this time.")
