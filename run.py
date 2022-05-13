@@ -167,3 +167,10 @@ def show_result():
         print(user_name + " guess to computer board...")
         sleep(2)
         print("Congratulations! " + user_name + " guess this time")
+    else:
+        computer_board[user_guess_row][user_guess_col] = hit_miss_sign
+        print_board(computer_board, computer_name)
+        print("\n")
+        print(user_name + " guess to computer board...")
+        sleep(2)
+        print(user_name + " missed this time.")
