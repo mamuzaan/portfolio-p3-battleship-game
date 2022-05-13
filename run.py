@@ -115,3 +115,19 @@ def take_input_and_play_game():
             continue
         else:
             break
+    
+    while True:
+        """
+        Validation! user can guess colum from index nummer o and it's depend
+        on users grid size otherwise print wrong message below.
+        """
+        try:
+            user_guess_col = int(input("Guess a col:\n"))
+            if user_guess_col < 0 or user_guess_col >= user_grid_size:
+                print("Oops, that's not even in the ocean. Guess again:\n")
+                continue
+        except ValueError:
+            print("Please enter correct col value:\n")
+            continue
+        else:
+            break
