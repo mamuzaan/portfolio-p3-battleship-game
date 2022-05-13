@@ -88,3 +88,9 @@ def prepare_user_ship():
         user_ship_row.append(random_num(user_board))
         user_ship_col.append(random_num(user_board))
         user_board[user_ship_row[x]][user_ship_col[x]] = ship_sign
+
+
+def prepare_computer_ship():
+    for x in range(total_ship_number):
+        computer_ship_row.append(random_num(computer_board))
+        computer_ship_col.append(random_num(computer_board))
