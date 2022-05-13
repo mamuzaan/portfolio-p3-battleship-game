@@ -81,3 +81,10 @@ def print_board(board, name):
 
 def random_num(board):
     return randint(0, len(board) - 1)
+
+
+def prepare_user_ship():
+    for x in range(total_ship_number):
+        user_ship_row.append(random_num(user_board))
+        user_ship_col.append(random_num(user_board))
+        user_board[user_ship_row[x]][user_ship_col[x]] = ship_sign
