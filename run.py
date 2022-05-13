@@ -68,4 +68,16 @@ def set_user_up(user_name):
     
     for x in range(user_grid_size):
         computer_board.append(['  .  '] * user_grid_size)
-        
+
+
+def print_board(board, name):
+    """ Print User board and stands username on the board """
+    print("\n")
+    print(name + "'s board")
+    print("------------------------------------------------------------")
+    for row in board:
+        print(" ".join(row))
+
+
+def random_num(board):
+    return randint(0, len(board) - 1)
