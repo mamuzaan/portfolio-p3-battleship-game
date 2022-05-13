@@ -66,4 +66,6 @@ def set_user_up(user_name):
     for x in range(user_grid_size):
         user_board.append(['  .  '] * user_grid_size)
     
-    
+    for x in range(user_grid_size):
+        computer_board.append(['  .  '] * user_grid_size)
+        
