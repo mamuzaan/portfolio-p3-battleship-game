@@ -214,3 +214,4 @@ if __name__ == '__main__':
     prepare_computer_ship()
     print_board(user_board, user_name)
     print_board(computer_board, computer_name)
+    played_rounds = 0
