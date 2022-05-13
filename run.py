@@ -135,3 +135,11 @@ def take_input_and_play_game():
     computer_guess_row = random_num(computer_board)
     computer_guess_col = random_num(computer_board)
     show_result()
+
+
+def show_result():
+    """
+    In the result board if player guess Correct then print Congratulations
+    eser_name win, otherwise missed this time. Computer board print also
+    like same to user board.
+    """
