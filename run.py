@@ -12,3 +12,6 @@ print("---------------------------------- \n"
       "Grid size between 5 to 10 \n"
       "---------------------------------- ")
 
+user_board = []
+computer_board = []
+total_ship_number = 5
