@@ -212,3 +212,5 @@ if __name__ == '__main__':
         computer_board.append(['  .  '] * user_grid_size)
     prepare_user_ship()
     prepare_computer_ship()
+    print_board(user_board, user_name)
+    print_board(computer_board, computer_name)
