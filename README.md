@@ -46,3 +46,17 @@ I have manually tested this project by doing the following
 - Given incorrect input: strings when numbers are expected, out of bounds inputs
 - Tested in my local terminal and the code Institute Heroku Terminal
 
+
+## Bugs
+
+### Solved Bugs
+    - 
+    -
+
+## Remaining Bugs
+    - No bugs remaining
+
+## Validator Testing
+    - PEP8
+    * No errors were returned from PEP8online.com
+
